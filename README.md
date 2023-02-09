@@ -17,3 +17,13 @@ Given the accuracy scores after making predictions with logistic regression, it 
 The SMOTEENN algorithm is a combinational approach of over- and undersampling. After making predictions with logistic regression, it appears that this combinational algorithm was almost as accurate as the RandomOverSampler, correctly classifying 62.5% of cases as either high-risk or low-risk.
 
 ## Predict Credit Risk with Ensemble Classifiers
+Training and comparing two different ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk and evaluating the accuracy of each model. 
+
+Accuracy Scores:
+* BalancedRandomForestClassifier - 0.802
+* EasyEnsembleClassifier - 0.938
+
+The ensemble classifiers were far more accurate than the resampling algorithms, with the EasyEnsembleClassifier producing a correct classification for an amazing 93.8% of cases. While the BalancedRandomForestClassifier clocked in at a lesser 80.2%, it has the added benefit of providing a list of the most influential features in its model.
+
+Top Ten Most Important Features in BalancedRandomForestClassifier:
+<img width="686" alt="Screen Shot 2023-02-08 at 9 12 49 PM" src="https://user-images.githubusercontent.com/95303422/217699311-f64b0a16-7e8a-4380-9579-aa571afe9d8a.png">
